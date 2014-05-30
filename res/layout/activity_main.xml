@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tpv.xmic.sourcelist_2.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <AdapterViewFlipper
+        android:id="@+id/adapterViewFlipper1"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="158dp" >
+    </AdapterViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/adapterViewFlipper1"
+        android:layout_marginRight="140dp"
+        android:background="#00cc99" >
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewFlipper1"
+        android:layout_below="@+id/viewFlipper1"
+        android:layout_marginTop="40dp"
+        android:text="Button" />
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/adapterViewFlipper1"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="158dp"
+        android:layout_toRightOf="@+id/adapterViewFlipper1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapterViewFlipper1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="30dp"
+        android:text="打开二" 
+        android:background="@drawable/selector">
+
+        <requestFocus />
+    </Button>
+
+</RelativeLayout>

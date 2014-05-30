@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    tools:context="com.tpv.xmic.sourcelist_2.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <HorizontalScrollView
+        android:id="@+id/HScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:descendantFocusability="afterDescendants"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="afterDescendants"
+            android:orientation="horizontal"
+            android:padding="30dp" >
+
+            <ImageView
+                android:id="@+id/img_one"
+                style="@style/ImageStyle"
+                android:background="@drawable/desert"
+                android:src="@drawable/selector" >
+
+                <requestFocus />
+            </ImageView>
+	
+            <ImageView
+                android:id="@+id/img_two"
+                style="@style/ImageStyle"
+                android:background="@drawable/koala"
+                android:src="@drawable/selector" />
+
+            <ImageView
+                android:id="@+id/img_3"
+                style="@style/ImageStyle"
+                android:background="@drawable/hydrangeas"
+                android:src="@drawable/selector" />
+
+            <ImageView
+                android:id="@+id/img_4"
+                style="@style/ImageStyle"
+                android:background="@drawable/jellyfish"
+                android:src="@drawable/selector" />
+
+            <ImageView
+                android:id="@+id/img_5"
+                style="@style/ImageStyle"
+                android:background="@drawable/lighthouse"
+                android:src="@drawable/selector" />
+
+            <ImageView
+                android:id="@+id/img_6"
+                style="@style/ImageStyle"
+                android:background="@drawable/penguins"
+                android:src="@drawable/selector" />
+
+            <ImageView
+                android:id="@+id/img_7"
+                style="@style/ImageStyle"
+                android:background="@drawable/tulips"
+                android:src="@drawable/selector" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
