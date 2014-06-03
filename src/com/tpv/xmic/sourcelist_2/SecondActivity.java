@@ -6,7 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnFocusChangeListener;
 import android.widget.ImageView;
-import android.widget.LinearLayout.LayoutParams;
+import android.widget.RelativeLayout.LayoutParams;
 
 public class SecondActivity extends Activity implements OnFocusChangeListener {
 	private ImageView		iv_1;
@@ -16,7 +16,9 @@ public class SecondActivity extends Activity implements OnFocusChangeListener {
 	private ImageView		iv_5;
 	private ImageView		iv_6;
 	private ImageView		iv_7;
-	private int				mScaleInt	= 20;
+	// private ImageView Img_test_1;
+	// private ImageView Img_test_2;
+	private int				mScaleInt	= 40;
 	private LayoutParams	origin;
 
 	public SecondActivity() {
@@ -35,6 +37,9 @@ public class SecondActivity extends Activity implements OnFocusChangeListener {
 	}
 
 	private void getViewReference() {
+		// Img_test_1 = (ImageView) this.findViewById(R.id.img_test_1);
+		// Img_test_2 = (ImageView) this.findViewById(R.id.img_test_2);
+
 		iv_1 = (ImageView) this.findViewById(R.id.img_one);
 		iv_2 = (ImageView) this.findViewById(R.id.img_two);
 		iv_3 = (ImageView) this.findViewById(R.id.img_3);
@@ -46,6 +51,8 @@ public class SecondActivity extends Activity implements OnFocusChangeListener {
 	}
 
 	private void registListener() {
+		// Img_test_1.setOnFocusChangeListener(this);
+		// Img_test_2.setOnFocusChangeListener(this);
 		iv_1.setOnFocusChangeListener(this);
 		iv_2.setOnFocusChangeListener(this);
 		iv_3.setOnFocusChangeListener(this);
@@ -61,6 +68,18 @@ public class SecondActivity extends Activity implements OnFocusChangeListener {
 
 	}
 
+	/**
+	 * 布局是一个RelativeLayout作为一个Item，里面包含ImageView和一个TextView，
+	 * 这样只获取ImageView来实现放大和焦点变化。
+	 * 这种布局的特点必须是Item控件（即RelativeLayout）的宽高不能是固定值或match_parent的值，
+	 * 需要wrap_content的属性值，这样ImageView放大后父控件也会跟着放大。
+	 * 
+	 * @author john.lin
+	 * @param v
+	 *            焦点变化视图
+	 * @param hasFocus
+	 *            是否获得焦点
+	 */
 	private void setImageScale(View v, boolean hasFocus) {
 		origin = (LayoutParams) v.getLayoutParams();
 		if (hasFocus) {

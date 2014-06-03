@@ -16,62 +16,153 @@
         android:layout_height="400dp"
         android:layout_centerInParent="true"
         android:descendantFocusability="afterDescendants"
-        android:scrollbars="none" 
-        >
+        android:scrollbars="none" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:gravity="center"
             android:descendantFocusability="afterDescendants"
+            android:gravity="center"
             android:orientation="horizontal"
             android:padding="30dp" >
 
-            <ImageView
-                android:id="@+id/img_one"
-                style="@style/ImageStyle"
-                android:background="@drawable/hydrangeas"
-                android:src="@drawable/selector" >
+            <!--
+                 <RelativeLayout
+                android:id="@+id/test_view_1"
+                style="@style/relative_style" >
 
-                <requestFocus />
-            </ImageView>
-	
-            <ImageView
-                android:id="@+id/img_two"
-                style="@style/ImageStyle"
-                android:background="@drawable/koala"
-                android:src="@drawable/selector" />
+                <ImageView
+                    android:id="@+id/img_test_1"
+                    style="@style/ImageStyle"
+                    android:background="@drawable/koala"
+                    android:src="@drawable/selector" 
+                    android:layout_centerInParent="true">
 
-            <ImageView
-                android:id="@+id/img_3"
-                style="@style/ImageStyle"
-                android:background="@drawable/hydrangeas"
-                android:src="@drawable/selector" />
+                    <requestFocus />
+                </ImageView>
 
-            <ImageView
-                android:id="@+id/img_4"
-                style="@style/ImageStyle"
-                android:background="@drawable/jellyfish"
-                android:src="@drawable/selector" />
+                <TextView
+                    android:id="@+id/chanel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="chanel one"
+                    android:textColor="#ff0000"
+                    android:textSize="30sp" />
+            </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/img_5"
-                style="@style/ImageStyle"
-                android:background="@drawable/lighthouse"
-                android:src="@drawable/selector" />
+            <RelativeLayout
+                android:id="@+id/test_view_2"
+                style="@style/relative_style" >
 
-            <ImageView
-                android:id="@+id/img_6"
-                style="@style/ImageStyle"
-                android:background="@drawable/penguins"
-                android:src="@drawable/selector" />
+                <ImageView
+                    android:id="@+id/img_test_2"
+                    style="@style/ImageStyle"
+                    android:background="@drawable/hydrangeas"
+                    android:src="@drawable/selector"
+                    android:layout_centerInParent="true" >
+                </ImageView>
 
-            <ImageView
-                android:id="@+id/img_7"
-                style="@style/ImageStyle"
-                android:background="@drawable/tulips"
-                android:src="@drawable/selector" />
+                <TextView
+                    android:id="@+id/chanel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="chanel two"
+                    android:textColor="#0000ff"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+            -->
+
+            <RelativeLayout
+                android:id="@+id/test_view_3"
+                style="@style/relative_style" >
+
+                <ImageView
+                    android:id="@+id/img_one"
+                    style="@style/ImageStyle"
+                    android:background="@drawable/koala"
+                    android:src="@drawable/selector" >
+                    <requestFocus/>
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/chanel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="chanel one"
+                    android:textColor="#ff0000"
+                    android:textSize="30sp" />
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/test_view_4"
+                style="@style/relative_style" >
+
+                <ImageView
+                    android:id="@+id/img_two"
+                    style="@style/ImageStyle"
+                    android:background="@drawable/hydrangeas"
+                    android:src="@drawable/selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/test_view_5"
+                style="@style/relative_style" >
+
+                <ImageView
+                    android:id="@+id/img_3"
+                    style="@style/ImageStyle"
+                    android:background="@drawable/tulips"
+                    android:src="@drawable/selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/test_view_6"
+                style="@style/relative_style" >
+
+                <ImageView
+                    android:id="@+id/img_4"
+                    style="@style/ImageStyle"
+                    android:background="@drawable/jellyfish"
+                    android:src="@drawable/selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/test_view_7"
+                style="@style/relative_style" >
+
+                <ImageView
+                    android:id="@+id/img_5"
+                    style="@style/ImageStyle"
+                    android:background="@drawable/lighthouse"
+                    android:src="@drawable/selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/test_view_8"
+                style="@style/relative_style" >
+
+                <ImageView
+                    android:id="@+id/img_6"
+                    style="@style/ImageStyle"
+                    android:background="@drawable/penguins"
+                    android:src="@drawable/selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/test_view_9"
+                style="@style/relative_style" >
+
+                <ImageView
+                    android:id="@+id/img_7"
+                    style="@style/ImageStyle"
+                    android:background="@drawable/tulips"
+                    android:src="@drawable/selector" />
+            </RelativeLayout>
         </LinearLayout>
     </HorizontalScrollView>
 

@@ -2,13 +2,13 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
     </style>
 
@@ -27,15 +27,25 @@
                 android:contentDescription="content"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:scaleType="fitXY"
+                android:scaleType="fitXY"
         -->
         <item name="android:layout_width">400dp</item>
         <item name="android:layout_height">300dp</item>
         <item name="android:clickable">true</item>
         <item name="android:contentDescription">content</item>
         <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+
         <!-- <item name="android:layout_margin">3dp</item> -->
-       <!--  <item name="android:scaleType">centerCrop</item> -->     
+        <!-- <item name="android:scaleType">centerCrop</item> -->
+    </style>
+
+    <style name="relative_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
     </style>
 
 </resources>
