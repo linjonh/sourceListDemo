@@ -71,8 +71,9 @@ public class SecondActivity extends Activity implements OnFocusChangeListener {
 	/**
 	 * 布局是一个RelativeLayout作为一个Item，里面包含ImageView和一个TextView，
 	 * 这样只获取ImageView来实现放大和焦点变化。
-	 * 这种布局的特点必须是Item控件（即RelativeLayout）的宽高不能是固定值或match_parent的值，
+	 * 这种布局的特点必须是Item控件（即RelativeLayout）的宽高不能是固定值或match_parent的值（如果这样的设置会出现不放大或反而变得很小），
 	 * 需要wrap_content的属性值，这样ImageView放大后父控件也会跟着放大。
+	 * 此处的放大思想是款和高都加上一个缩放值。
 	 * 
 	 * @author john.lin
 	 * @param v
