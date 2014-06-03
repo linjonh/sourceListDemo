@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnFocusChangeListener;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
+import android.widget.LinearLayout.LayoutParams;
 
 public class SecondActivity extends Activity implements OnFocusChangeListener {
 	private ImageView		iv_1;
@@ -30,21 +30,22 @@ public class SecondActivity extends Activity implements OnFocusChangeListener {
 		setContentView(R.layout.fragment_main);
 		getViewReference();
 		registListener();
-		
+		setImageScale(iv_1, true);// set first view ,because it won't call
+									// onFocusChange() first of all
 	}
 
 	private void getViewReference() {
-		iv_1 = (ImageView) this.findViewById(R.id.img_one);	
-		iv_2 = (ImageView) this.findViewById(R.id.img_two);	
-		iv_3 = (ImageView) this.findViewById(R.id.img_3);	
+		iv_1 = (ImageView) this.findViewById(R.id.img_one);
+		iv_2 = (ImageView) this.findViewById(R.id.img_two);
+		iv_3 = (ImageView) this.findViewById(R.id.img_3);
 		iv_4 = (ImageView) this.findViewById(R.id.img_4);
 		iv_5 = (ImageView) this.findViewById(R.id.img_5);
-		iv_6 = (ImageView) this.findViewById(R.id.img_6);	
-		iv_7 = (ImageView) this.findViewById(R.id.img_7);		
-		
+		iv_6 = (ImageView) this.findViewById(R.id.img_6);
+		iv_7 = (ImageView) this.findViewById(R.id.img_7);
+
 	}
 
-	private void registListener(){
+	private void registListener() {
 		iv_1.setOnFocusChangeListener(this);
 		iv_2.setOnFocusChangeListener(this);
 		iv_3.setOnFocusChangeListener(this);
@@ -53,21 +54,22 @@ public class SecondActivity extends Activity implements OnFocusChangeListener {
 		iv_6.setOnFocusChangeListener(this);
 		iv_7.setOnFocusChangeListener(this);
 	}
+
 	@Override
 	public void onFocusChange(View v, boolean hasFocus) {
-		origin = v.getLayoutParams();
 		setImageScale(v, hasFocus);
 
 	}
 
 	private void setImageScale(View v, boolean hasFocus) {
+		origin = (LayoutParams) v.getLayoutParams();
 		if (hasFocus) {
 			Log.i("setImageScale", "hasFocus");
 			LayoutParams params = new LayoutParams(origin.width + mScaleInt, origin.height + mScaleInt);
 			v.setLayoutParams(params);
 		} else {
 			Log.i("setImageScale", "Not hasFocus");
-			LayoutParams params = new LayoutParams(origin.width, origin.height);
+			LayoutParams params = new LayoutParams(origin.width - mScaleInt, origin.height - mScaleInt);
 			v.setLayoutParams(params);
 		}
 	}
