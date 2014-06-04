@@ -10,7 +10,6 @@ import android.view.View.OnFocusChangeListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout.LayoutParams;
-import android.widget.PopupWindow;
 import android.widget.TextView;
 
 public class SecondActivity extends Activity implements OnFocusChangeListener, OnClickListener {
@@ -68,11 +67,10 @@ public class SecondActivity extends Activity implements OnFocusChangeListener, O
 	private TextView		mTv_7;
 	private TextView[]		arrTextVew	= { mTv_1, mTv_2, mTv_3, mTv_4, mTv_5, mTv_6, mTv_7, };
 	private boolean			mFocusLeave;
-	// private ImageView Img_test_1;
-	// private ImageView Img_test_2;
+
 	private int				mScaleInt	= 40;
 	private LayoutParams	origin;
-	private PopupWindow		mPopupWindow;
+	
 
 	public SecondActivity() {
 		// TODO Auto-generated constructor stub
@@ -99,28 +97,6 @@ public class SecondActivity extends Activity implements OnFocusChangeListener, O
 		iv_5 = (ImageView) this.findViewById(R.id.img_5);
 		iv_6 = (ImageView) this.findViewById(R.id.img_6);
 		iv_7 = (ImageView) this.findViewById(R.id.img_7);
-
-		// mRename1 = (Button) this.findViewById(R.id.rename_btn_1);
-		// mRename2 = (Button) this.findViewById(R.id.rename_btn_2);
-		// mRename3 = (Button) this.findViewById(R.id.rename_btn_3);
-		// mRename4 = (Button) this.findViewById(R.id.rename_btn_4);
-		// mRename5 = (Button) this.findViewById(R.id.rename_btn_5);
-		// mRename6 = (Button) this.findViewById(R.id.rename_btn_6);
-		// mRename7 = (Button) this.findViewById(R.id.rename_btn_7);
-		// mRest1 = (Button) this.findViewById(R.id.rest_1);
-		// mRest2 = (Button) this.findViewById(R.id.rest_2);
-		// mRest3 = (Button) this.findViewById(R.id.rest_3);
-		// mRest4 = (Button) this.findViewById(R.id.rest_4);
-		// mRest5 = (Button) this.findViewById(R.id.rest_5);
-		// mRest6 = (Button) this.findViewById(R.id.rest_6);
-		// mRest7 = (Button) this.findViewById(R.id.rest_7);
-		// mSetHome1 = (Button) this.findViewById(R.id.set_home_page_1);
-		// mSetHome2 = (Button) this.findViewById(R.id.set_home_page_2);
-		// mSetHome3 = (Button) this.findViewById(R.id.set_home_page_3);
-		// mSetHome4 = (Button) this.findViewById(R.id.set_home_page_4);
-		// mSetHome5 = (Button) this.findViewById(R.id.set_home_page_5);
-		// mSetHome6 = (Button) this.findViewById(R.id.set_home_page_6);
-		// mSetHome7 = (Button) this.findViewById(R.id.set_home_page_7);
 		// 全部初始化不可见
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 7; j++) {
@@ -199,43 +175,13 @@ public class SecondActivity extends Activity implements OnFocusChangeListener, O
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		// View view=View.inflate(this, R.layout.item_pop_window, null);
-		// mPopupWindow = new PopupWindow(view, 600, 400, true);
-		// mPopupWindow.setOnDismissListener(new OnDismissListener() {
-		//
-		// @Override
-		// public void onDismiss() {
-		// // TODO Auto-generated method stub
-		// Log.i("mPopupWindow", "已经执行退出方法");
-		// }
-		// });
-		// Button btn1=(Button) view.findViewById(R.id.rest);
-		// Button btn2=(Button) view.findViewById(R.id.set_home_page);
-		// Button btn3=(Button) view.findViewById(R.id.rename_btn);
-		// OnClickListener clickListener = new OnClickListener() {
-		//
-		// @Override
-		// public void onClick(View v) {
-		// // TODO Auto-generated method stub
-		// mPopupWindow.dismiss();
-		// }
-		// };
-		// btn1.setOnClickListener(clickListener);//TODO 暂时只设置退出popupWindow事件
-		// btn2.setOnClickListener(clickListener);
-		// btn3.setOnClickListener(clickListener);
 
 		switch (v.getId()) {
 		case R.id.img_one:
-			// mPopupWindow.showAsDropDown(v, (int) v.getX(), (int) v.getY());
+			
 			break;
 		case R.id.img_two:
-			// mPopupWindow.showAsDropDown(v, (int) v.getX(), (int) v.getY());
-
-			// 使用弹出菜单
-			// PopupMenu popupMenu=new PopupMenu(this, iv_1);
-			// popupMenu.inflate(R.menu.main);
-
-			// popupMenu.show();
+			
 			break;
 
 		default:
