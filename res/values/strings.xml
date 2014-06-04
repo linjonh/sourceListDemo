@@ -4,5 +4,7 @@
     <string name="app_name">SourceList_2</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+	<string name="rename_text">重新命名</string>
+	<string name="set_homepage_text">设为开机执行首页</string>
+	<string name="rest_text">返回预设值</string>
 </resources>

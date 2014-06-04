@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:descendantFocusability="afterDescendants"
+        android:descendantFocusability="beforeDescendants"
         android:scrollbars="none" >
 
         <LinearLayout
@@ -38,23 +38,19 @@
                         android:id="@+id/rename_btn_1"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/set_home_page"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rest"
-                        android:text="重新命名"
+                        android:nextFocusDown="@+id/set_home_page_1"                  
+                        android:nextFocusUp="@+id/rest_1"
+                        android:text="@string/rename_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
 
                     <ImageView
-                        android:id="@+id/img_one"
-                        style="@style/ImageStyle"
-                        android:layout_below="@+id/rename_btn"
+                        android:id="@+id/img_1"
+                        style="@style/ImageStyle"                        
                         android:background="@drawable/koala"
-                        android:nextFocusDown="@+id/set_home_page"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusUp="@+id/rename_btn"
+                        android:nextFocusDown="@+id/set_home_page_1"                        
+                        android:nextFocusUp="@+id/rename_btn_1"
                         android:src="@drawable/selector" >
 
                         <requestFocus />
@@ -64,11 +60,10 @@
                         android:id="@+id/set_home_page_1"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/rest"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rename_btn"
-                        android:text="设为开机执行首页"
+                        android:nextFocusDown="@+id/rest_1"
+                      
+                        android:nextFocusUp="@+id/rename_btn_1"
+                        android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -77,10 +72,9 @@
                         android:id="@+id/rest_1"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/set_home_page"
-                        android:text="返回预设值"
+                       
+                        android:nextFocusUp="@+id/set_home_page_1"
+                        android:text="@string/rest_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -91,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="chanel one"
+                    android:text="@string/app_name"
                     android:textColor="#ff0000"
                     android:textSize="30sp" />
             </RelativeLayout>
@@ -110,31 +104,29 @@
                         android:id="@+id/rename_btn_2"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/set_home_page"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rest"
-                        android:text="重新命名"
+                        android:nextFocusDown="@+id/set_home_page_2"
+                      
+                        android:nextFocusUp="@+id/rest_2"
+                        android:text="@string/rename_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
 
                     <ImageView
-                        android:id="@+id/img_two"
+                        android:id="@+id/img_2"
                         style="@style/ImageStyle"
-                        android:background="@drawable/hydrangeas"
-                        android:nextFocusLeft="@+id/img_one"
+                        android:background="@drawable/hydrangeas"                       
                         android:src="@drawable/selector" />
+                    <!--  android:nextFocusLeft="@+id/img_1"  -->
 
                     <Button
                         android:id="@+id/set_home_page_2"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/rest"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rename_btn"
-                        android:text="设为开机执行首页"
+                        android:nextFocusDown="@+id/rest_2"
+                      
+                        android:nextFocusUp="@+id/rename_btn_2"
+                        android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -143,10 +135,9 @@
                         android:id="@+id/rest_2"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/set_home_page"
-                        android:text="返回预设值"
+                      
+                        android:nextFocusUp="@+id/set_home_page_2"
+                        android:text="@string/rest_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -157,7 +148,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="chanel one"
+                    android:text="@string/app_name"
                     android:textColor="#ff0000"
                     android:textSize="30sp" />
             </RelativeLayout>
@@ -176,11 +167,10 @@
                         android:id="@+id/rename_btn_3"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/set_home_page"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rest"
-                        android:text="重新命名"
+                        android:nextFocusDown="@+id/set_home_page3"
+                  
+                        android:nextFocusUp="@+id/rest_3"
+                        android:text="@string/rename_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -189,18 +179,17 @@
                         android:id="@+id/img_3"
                         style="@style/ImageStyle"
                         android:background="@drawable/tulips"
-                        android:nextFocusLeft="@+id/img_two"
                         android:src="@drawable/selector" />
+                    <!--  android:nextFocusLeft="@+id/img_2" -->
 
                     <Button
                         android:id="@+id/set_home_page_3"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/rest"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rename_btn"
-                        android:text="设为开机执行首页"
+                        android:nextFocusDown="@+id/rest_3"
+            
+                        android:nextFocusUp="@+id/rename_btn_3"
+                        android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -209,10 +198,9 @@
                         android:id="@+id/rest_3"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/set_home_page"
-                        android:text="返回预设值"
+                
+                        android:nextFocusUp="@+id/set_home_page_3"
+                        android:text="@string/rest_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -223,7 +211,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="chanel one"
+                    android:text="@string/app_name"
                     android:textColor="#ff0000"
                     android:textSize="30sp" />
             </RelativeLayout>
@@ -242,11 +230,10 @@
                         android:id="@+id/rename_btn_4"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/set_home_page"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rest"
-                        android:text="重新命名"
+                        android:nextFocusDown="@+id/set_home_page_4"
+                   
+                        android:nextFocusUp="@+id/rest_4"
+                        android:text="@string/rename_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -261,11 +248,10 @@
                         android:id="@+id/set_home_page_4"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/rest"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rename_btn"
-                        android:text="设为开机执行首页"
+                        android:nextFocusDown="@+id/rest_4"
+                     
+                        android:nextFocusUp="@+id/rename_btn_4"
+                        android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -274,10 +260,9 @@
                         android:id="@+id/rest_4"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/set_home_page"
-                        android:text="返回预设值"
+                  
+                        android:nextFocusUp="@+id/set_home_page_4"
+                        android:text="@string/rest_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -288,7 +273,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="chanel one"
+                    android:text="@string/app_name"
                     android:textColor="#ff0000"
                     android:textSize="30sp" />
             </RelativeLayout>
@@ -307,11 +292,10 @@
                         android:id="@+id/rename_btn_5"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/set_home_page"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rest"
-                        android:text="重新命名"
+                        android:nextFocusDown="@+id/set_home_page_5"
+             
+                        android:nextFocusUp="@+id/rest_5"
+                        android:text="@string/rename_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -326,11 +310,10 @@
                         android:id="@+id/set_home_page_5"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/rest"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rename_btn"
-                        android:text="设为开机执行首页"
+                        android:nextFocusDown="@+id/rest_5"
+                    
+                        android:nextFocusUp="@+id/rename_btn_5"
+                        android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -339,10 +322,9 @@
                         android:id="@+id/rest_5"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/set_home_page"
-                        android:text="返回预设值"
+                 
+                        android:nextFocusUp="@+id/set_home_page_5"
+                        android:text="@string/rest_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -353,7 +335,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="chanel one"
+                    android:text="@string/app_name"
                     android:textColor="#ff0000"
                     android:textSize="30sp" />
             </RelativeLayout>
@@ -372,11 +354,10 @@
                         android:id="@+id/rename_btn_6"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/set_home_page"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rest"
-                        android:text="重新命名"
+                        android:nextFocusDown="@+id/set_home_page_6"
+          
+                        android:nextFocusUp="@+id/rest_6"
+                        android:text="@string/rename_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -391,11 +372,10 @@
                         android:id="@+id/set_home_page_6"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/rest"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rename_btn"
-                        android:text="设为开机执行首页"
+                        android:nextFocusDown="@+id/rest_6"
+                 
+                        android:nextFocusUp="@+id/rename_btn_6"
+                        android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -404,10 +384,9 @@
                         android:id="@+id/rest_6"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/set_home_page"
-                        android:text="返回预设值"
+                  
+                        android:nextFocusUp="@+id/set_home_page_6"
+                        android:text="@string/rest_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -418,7 +397,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="chanel one"
+                    android:text="@string/app_name"
                     android:textColor="#ff0000"
                     android:textSize="30sp" />
             </RelativeLayout>
@@ -437,11 +416,10 @@
                         android:id="@+id/rename_btn_7"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/set_home_page"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rest"
-                        android:text="重新命名"
+                        android:nextFocusDown="@+id/set_home_page_7"
+                   
+                        android:nextFocusUp="@+id/rest_7"
+                        android:text="@string/rename_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -456,11 +434,10 @@
                         android:id="@+id/set_home_page_7"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/rest"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/rename_btn"
-                        android:text="设为开机执行首页"
+                        android:nextFocusDown="@+id/rest_7"
+                     
+                        android:nextFocusUp="@+id/rename_btn_7"
+                        android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -469,10 +446,9 @@
                         android:id="@+id/rest_7"
                         android:layout_width="400dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusLeft="@null"
-                        android:nextFocusRight="@null"
-                        android:nextFocusUp="@+id/set_home_page"
-                        android:text="返回预设值"
+                    
+                        android:nextFocusUp="@+id/set_home_page_7"
+                        android:text="@string/rest_text"
                         android:textColor="#ff0000"
                         android:textSize="30sp"
                         android:visibility="visible" />
@@ -483,7 +459,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="chanel one"
+                    android:text="@string/app_name"
                     android:textColor="#ff0000"
                     android:textSize="30sp" />
             </RelativeLayout>
