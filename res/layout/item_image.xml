@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_view_3"
+    style="@style/relative_style" 
+    android:rotation="90">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/rename_btn"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/set_home_page"
+            android:nextFocusLeft="@null"
+            android:nextFocusRight="@null"
+            android:nextFocusUp="@+id/rest"
+            android:text="重新命名"
+            android:textColor="#ff0000"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/item_img"
+            style="@style/ImageStyle"
+            android:layout_below="@+id/rename_btn"
+            android:background="@drawable/koala"
+            android:nextFocusDown="@+id/set_home_page"
+            android:nextFocusUp="@+id/rename_btn"
+            android:src="@drawable/selector" >
+
+            <requestFocus />
+        </ImageView>
+
+        <Button
+            android:id="@+id/apply_home"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/rest"
+            android:nextFocusLeft="@null"
+            android:nextFocusRight="@null"
+            android:nextFocusUp="@+id/rename_btn"
+            android:text="设为开机执行首页"
+            android:textColor="#ff0000"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/rest"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:nextFocusLeft="@null"
+            android:nextFocusRight="@null"
+            android:nextFocusUp="@+id/set_home_page"
+            android:text="返回预设值"
+            android:textColor="#ff0000"
+            android:textSize="30sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chanel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="chanel one"
+        android:textColor="#ff0000"
+        android:textSize="30sp" />
+
+</RelativeLayout>

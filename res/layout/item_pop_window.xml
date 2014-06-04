@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/rename_btn"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:nextFocusDown="@+id/set_home_page"
+        android:nextFocusUp="@+id/rest"
+        android:text="重新命名"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:visibility="visible" />
+    <!--
+     	<ImageView 
+	    android:layout_width="440dp"
+	    android:layout_height="340dp"/>
+    -->
+
+    <Button
+        android:id="@+id/set_home"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:nextFocusDown="@+id/rest"
+        android:nextFocusUp="@+id/rename_btn"
+        android:text="设为开机执行首页"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/rest"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_home_page"
+        android:nextFocusUp="@+id/set_home_page"
+        android:text="返回预设值"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+</LinearLayout>
