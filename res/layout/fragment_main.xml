@@ -36,9 +36,9 @@
 
                     <Button
                         android:id="@+id/rename_btn_1"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
-                        android:nextFocusDown="@+id/set_home_page_1"                  
+                        android:nextFocusDown="@+id/set_home_page_1"
                         android:nextFocusUp="@+id/rest_1"
                         android:text="@string/rename_text"
                         android:textColor="#ff0000"
@@ -47,21 +47,18 @@
 
                     <ImageView
                         android:id="@+id/img_1"
-                        style="@style/ImageStyle"                        
-                        android:background="@drawable/koala"
-                        android:nextFocusDown="@+id/set_home_page_1"                        
-                        android:nextFocusUp="@+id/rename_btn_1"
+                        style="@style/ImageStyle"
+                        android:background="@drawable/koala"                     
                         android:src="@drawable/selector" >
 
-                        <requestFocus />
+                        <!-- <requestFocus /> -->
                     </ImageView>
 
                     <Button
                         android:id="@+id/set_home_page_1"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/rest_1"
-                      
                         android:nextFocusUp="@+id/rename_btn_1"
                         android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
@@ -70,9 +67,8 @@
 
                     <Button
                         android:id="@+id/rest_1"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
-                       
                         android:nextFocusUp="@+id/set_home_page_1"
                         android:text="@string/rest_text"
                         android:textColor="#ff0000"
@@ -102,10 +98,9 @@
 
                     <Button
                         android:id="@+id/rename_btn_2"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/set_home_page_2"
-                      
                         android:nextFocusUp="@+id/rest_2"
                         android:text="@string/rename_text"
                         android:textColor="#ff0000"
@@ -115,16 +110,15 @@
                     <ImageView
                         android:id="@+id/img_2"
                         style="@style/ImageStyle"
-                        android:background="@drawable/hydrangeas"                       
+                        android:background="@drawable/hydrangeas"
                         android:src="@drawable/selector" />
-                    <!--  android:nextFocusLeft="@+id/img_1"  -->
+                    <!-- android:nextFocusLeft="@+id/img_1" -->
 
                     <Button
                         android:id="@+id/set_home_page_2"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/rest_2"
-                      
                         android:nextFocusUp="@+id/rename_btn_2"
                         android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
@@ -133,9 +127,8 @@
 
                     <Button
                         android:id="@+id/rest_2"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
-                      
                         android:nextFocusUp="@+id/set_home_page_2"
                         android:text="@string/rest_text"
                         android:textColor="#ff0000"
@@ -165,10 +158,9 @@
 
                     <Button
                         android:id="@+id/rename_btn_3"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/set_home_page3"
-                  
                         android:nextFocusUp="@+id/rest_3"
                         android:text="@string/rename_text"
                         android:textColor="#ff0000"
@@ -180,14 +172,13 @@
                         style="@style/ImageStyle"
                         android:background="@drawable/tulips"
                         android:src="@drawable/selector" />
-                    <!--  android:nextFocusLeft="@+id/img_2" -->
+                    <!-- android:nextFocusLeft="@+id/img_2" -->
 
                     <Button
                         android:id="@+id/set_home_page_3"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/rest_3"
-            
                         android:nextFocusUp="@+id/rename_btn_3"
                         android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
@@ -196,9 +187,8 @@
 
                     <Button
                         android:id="@+id/rest_3"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
-                
                         android:nextFocusUp="@+id/set_home_page_3"
                         android:text="@string/rest_text"
                         android:textColor="#ff0000"
@@ -228,10 +218,9 @@
 
                     <Button
                         android:id="@+id/rename_btn_4"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/set_home_page_4"
-                   
                         android:nextFocusUp="@+id/rest_4"
                         android:text="@string/rename_text"
                         android:textColor="#ff0000"
@@ -246,10 +235,9 @@
 
                     <Button
                         android:id="@+id/set_home_page_4"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/rest_4"
-                     
                         android:nextFocusUp="@+id/rename_btn_4"
                         android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
@@ -258,9 +246,8 @@
 
                     <Button
                         android:id="@+id/rest_4"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
-                  
                         android:nextFocusUp="@+id/set_home_page_4"
                         android:text="@string/rest_text"
                         android:textColor="#ff0000"
@@ -290,10 +277,9 @@
 
                     <Button
                         android:id="@+id/rename_btn_5"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/set_home_page_5"
-             
                         android:nextFocusUp="@+id/rest_5"
                         android:text="@string/rename_text"
                         android:textColor="#ff0000"
@@ -308,10 +294,9 @@
 
                     <Button
                         android:id="@+id/set_home_page_5"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/rest_5"
-                    
                         android:nextFocusUp="@+id/rename_btn_5"
                         android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
@@ -320,9 +305,8 @@
 
                     <Button
                         android:id="@+id/rest_5"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
-                 
                         android:nextFocusUp="@+id/set_home_page_5"
                         android:text="@string/rest_text"
                         android:textColor="#ff0000"
@@ -352,10 +336,9 @@
 
                     <Button
                         android:id="@+id/rename_btn_6"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/set_home_page_6"
-          
                         android:nextFocusUp="@+id/rest_6"
                         android:text="@string/rename_text"
                         android:textColor="#ff0000"
@@ -370,10 +353,9 @@
 
                     <Button
                         android:id="@+id/set_home_page_6"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/rest_6"
-                 
                         android:nextFocusUp="@+id/rename_btn_6"
                         android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
@@ -382,9 +364,8 @@
 
                     <Button
                         android:id="@+id/rest_6"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
-                  
                         android:nextFocusUp="@+id/set_home_page_6"
                         android:text="@string/rest_text"
                         android:textColor="#ff0000"
@@ -414,10 +395,9 @@
 
                     <Button
                         android:id="@+id/rename_btn_7"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/set_home_page_7"
-                   
                         android:nextFocusUp="@+id/rest_7"
                         android:text="@string/rename_text"
                         android:textColor="#ff0000"
@@ -432,10 +412,9 @@
 
                     <Button
                         android:id="@+id/set_home_page_7"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
                         android:nextFocusDown="@+id/rest_7"
-                     
                         android:nextFocusUp="@+id/rename_btn_7"
                         android:text="@string/set_homepage_text"
                         android:textColor="#ff0000"
@@ -444,9 +423,8 @@
 
                     <Button
                         android:id="@+id/rest_7"
-                        android:layout_width="400dp"
+                        android:layout_width="425dp"
                         android:layout_height="wrap_content"
-                    
                         android:nextFocusUp="@+id/set_home_page_7"
                         android:text="@string/rest_text"
                         android:textColor="#ff0000"
@@ -465,5 +443,73 @@
             </RelativeLayout>
         </LinearLayout>
     </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+       android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/s1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/selector"
+            android:text="@string/s1" />
+
+        <CheckBox
+            android:id="@+id/s2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/selector"
+            android:text="@string/s2" >
+
+            <requestFocus /> 
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/s3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/selector"
+            android:text="@string/s3" />
+
+        <CheckBox
+            android:id="@+id/s4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/selector"
+            android:text="@string/s4" />
+
+        <CheckBox
+            android:id="@+id/s5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/selector"
+            android:text="@string/s5" />
+
+        <CheckBox
+            android:id="@+id/s6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/selector"
+            android:text="@string/s6" />
+
+        <CheckBox
+            android:id="@+id/s7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/selector"
+            android:text="@string/s7" />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -27,7 +27,7 @@
             android:name=".SecondActivity"
             android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                 <action android:name="android.intent.action.MAIN" />
                 <!--
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="SA" />
@@ -35,23 +35,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".TestHorizontalListView"
-            android:label="@string/app_name" >
-            <intent-filter>
-
-                <!-- <action android:name="android.intent.action.MAIN" /> -->
-                <!--
-                <action android:name="android.intent.action.VIEW" />
-                <action android:name="SA" />
-                -->
-
-
-                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-
-            </intent-filter>
-        </activity>
+        </activity>    
     </application>
 
 </manifest>
